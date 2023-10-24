@@ -18,7 +18,8 @@ public class BaseTest {
 	}
 	
 	@AfterClass
-	public void tearDown() {
+	public void tearDown() throws InterruptedException {
+		Thread.sleep(4000);
 		//driver.close();//inchide tabul curent
 		driver.quit(); //inchide instanta de browser
 		
